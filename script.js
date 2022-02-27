@@ -1,11 +1,13 @@
 const bingoBox = document.querySelector(`.bingo-box`);
 console.log(bingoBox);
 const toDisplayCells = function () {
-  for (cellNumber = 1; cellNumber <= 76; cellNumber++) {
-    let newBingoBox = document.createComment(`div`);
+  for (let cellNumber = 1; cellNumber <= 76; cellNumber++) {
+    let newBingoBox = document.createElement(`div`);
     newBingoBox.innerHTML = cellNumber;
-    newBingoBox.id = bingoBox;
+    newBingoBox.classList.add(`cell`);
+    // newBingoBox.id = bingoBox;
     bingoBox.appendChild(newBingoBox);
   }
 };
-console.log(toDisplayCells());
+toDisplayCells();
+const highl
