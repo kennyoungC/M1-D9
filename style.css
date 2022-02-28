@@ -36,3 +36,15 @@ h1 {
   font-weight: bold;
   cursor: pointer;
 }
+.highlighed-cell {
+  padding: 18px;
+  width: 12.5%;
+  /* height: 70px; */
+  border: 2px solid red;
+  border-radius: 11px;
+  display: inline-block;
+  margin: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: azure;
+}
